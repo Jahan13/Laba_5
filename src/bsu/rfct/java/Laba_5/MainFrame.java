@@ -46,7 +46,12 @@ public class MainFrame extends JFrame {
                 MainFrame.this.openGraphics(MainFrame.this.fileChooser.getSelectedFile());
             }
         };
-
+        fileMenu.add(openGraphicsAction);
+        Action resetGraphicsAction = new AbstractAction("Отменить все изменения") {
+            public void actionPerformed(ActionEvent event) {
+                MainFrame.this.display.reset();
+            }
+        };
         this.resetGraphicsMenuItem = fileMenu.add(resetGraphicsAction);
         this.resetGraphicsMenuItem.setEnabled(false);
         this.getContentPane().add(this.display, "Center");

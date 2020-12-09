@@ -17,6 +17,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 
+
 public class MainFrame extends JFrame {
     private static final int WIDTH = 700;
     private static final int HEIGHT = 500;
@@ -26,6 +27,7 @@ public class MainFrame extends JFrame {
     private boolean fileLoaded = false;
 
     public MainFrame() {
+
         super("Обработка событий от мыши");
         this.setSize(700, 500);
         Toolkit kit = Toolkit.getDefaultToolkit();
